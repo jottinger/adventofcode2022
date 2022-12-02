@@ -2,6 +2,7 @@
 
 * [Advent of Code, 2022](https://adventofcode.com/2022/about)
 * Language: [Kotlin](https://kotlinlang.org/)
+* [Private Leaderboard](https://adventofcode.com/2022/leaderboard/private/view/221181)
 
 ## Notes
 
@@ -21,3 +22,10 @@ with part 1, because it relied on me inferring requirements that,
 well, ended up being drastically wrong, and that _definitely_ 
 affected the shape of the solution, especially considering that I 
 needed both results.
+
+In retrospect, I got it "right" but I'm really unhappy with the 
+process of accomplishing that. I should have added a transformation 
+step to migrate the two input specifications into a common form, and 
+evaluated *that* - it would have simplified *everything*. The 
+incomplete specs and the time factor (as I'm in a race with other 
+coders) worked against that.
