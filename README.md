@@ -6,6 +6,11 @@
 
 ## Notes
 
+> If you have not done the Advent of Code exercises, *BEWARE OF 
+> READING MY NOTES!* There are going to be some minor spoilers, I 
+> guarantee it. You're better off doing the exercises and _then_ 
+> reading the notes.
+
 * [Day 1](#day01)
 * [Day 2](#day02)
 
