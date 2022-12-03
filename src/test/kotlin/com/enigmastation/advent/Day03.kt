@@ -35,7 +35,7 @@ class Day03 {
     }
 
     @Test
-    fun buildRucksacks(name:String="day03/test"): List<Pair<Rucksack, Rucksack>> {
+    fun buildRucksacks(name: String = "day03/test"): List<Pair<Rucksack, Rucksack>> {
         val input = readInput(name)
         return input.map {
             val first = it.substring(0, it.length / 2)
@@ -65,5 +65,29 @@ class Day03 {
                     )
                 }
         )
+    }
+
+    @Test
+    fun part2() {
+        val data = buildRucksacks("day03/actual")
+        val groups: MutableList<Set<Char>> = mutableListOf()
+        var priorities: MutableList<Int> = mutableListOf()
+        var commons: Set<Char> = mutableSetOf()
+        var counter = 0
+        data.forEach {
+            val group = it.first.items().toMutableSet()
+            group.addAll(it.second.items().toSet())
+            counter++
+            when (counter) {
+                1 -> commons = group
+                2 -> commons = commons.intersect(group)
+                else -> {
+                    commons = commons.intersect(group)
+                    priorities.add(priority(commons.first()))
+                    counter = 0
+                }
+            }
+        }
+        println("part 2: "+priorities.sum())
     }
 }

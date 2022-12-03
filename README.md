@@ -13,6 +13,7 @@
 
 * [Day 1](#day01)
 * [Day 2](#day02)
+* [Day 3](#day03)
 
 ### <a name="day01">Day 01</a>
 
@@ -34,3 +35,14 @@ step to migrate the two input specifications into a common form, and
 evaluated *that* - it would have simplified *everything*. The 
 incomplete specs and the time factor (as I'm in a race with other 
 coders) worked against that.
+
+### <a name="day03">Day 03</a>
+
+I anticipated the data structures better this time, sort of - I'm 
+still being awfully stingy with types, mostly because these are all 
+one-shot solutions.
+
+I ended up implementing a control-break - yeah, COBOL for the win, 
+in Kotlin, right? - but that's the *fastest* solution I could think 
+of to write. I want to figure out how to collect groups of elements 
+by index in Kotlin; that would have made the solution *much* cleaner.
