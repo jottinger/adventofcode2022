@@ -14,6 +14,7 @@
 * [Day 1](#day01)
 * [Day 2](#day02)
 * [Day 3](#day03)
+* [Day 4](#day04)
 
 ### <a name="day01">Day 01</a>
 
@@ -46,3 +47,11 @@ I ended up implementing a control-break - yeah, COBOL for the win,
 in Kotlin, right? - but that's the *fastest* solution I could think 
 of to write. I want to figure out how to collect groups of elements 
 by index in Kotlin; that would have made the solution *much* cleaner.
+
+### <a name="day04">Day 04</a>
+
+Probably the easiest one so far, but I think part of that is 
+because I'm getting the hang of how the puzzles are constructed. 
+Part 1 and Part 2 were really similar, and could have been 
+parameterized with an activator function, but eh, copy and paste was 
+faster.
